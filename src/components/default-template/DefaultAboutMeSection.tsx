@@ -4,7 +4,11 @@ import { IconButton, Typography } from "components/core";
 import { TELEGRAM_URL, EMAIL_ADDRESS } from "constants/links";
 import TelegramIcon from "icons/TelegramIcon";
 import MailIcon from "icons/MailIcon";
+import DocsIcon from "icons/Docs";
 import { Section } from "shared/Section";
+
+const resumeURL =
+  "https://docs.google.com/document/d/e/2PACX-1vTytitEB_rchrBxX1IOvbF01rMoE9lDZwgqau3gtEG23NrnkbSzI4J_PAsX4-oFwG4wdJmLjxx57oXU/pub";
 
 export const DefaultAboutMeSection = () => {
   return (
@@ -19,18 +23,25 @@ export const DefaultAboutMeSection = () => {
           }
         </Typography>
         <div className="flex gap-[12px]">
+          <Link to={resumeURL} target="_blank" rel="noopener noreferrer" tabIndex={-1}>
+            <IconButton title="Look at my Resume" size="large">
+              <DocsIcon />
+            </IconButton>
+          </Link>
           <Link to={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" tabIndex={-1}>
-            <IconButton title="Telegram" size="large" >
+            <IconButton title="Telegram" size="large">
               <TelegramIcon />
             </IconButton>
           </Link>
-          <Link to={EMAIL_ADDRESS} target="_blank" rel="noopener noreferrer" tabIndex={-1}> 
+          <Link to={EMAIL_ADDRESS} target="_blank" rel="noopener noreferrer" tabIndex={-1}>
             <IconButton title="Email" size="large">
               <MailIcon />
             </IconButton>
           </Link>
         </div>
       </div>
+      {/* <div>
+      <iframe src="https://docs.google.com/document/d/e/2PACX-1vTytitEB_rchrBxX1IOvbF01rMoE9lDZwgqau3gtEG23NrnkbSzI4J_PAsX4-oFwG4wdJmLjxx57oXU/pub?embedded=true"></iframe>        </div> */}
     </Section>
   );
 };
