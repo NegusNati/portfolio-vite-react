@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { useState } from "react";
 
 import { Button, CustomLink, Typography } from "components/core";
 import ExternalLinkIcon from "icons/ExternalLinkIcon";
@@ -20,6 +21,7 @@ export const DefaultContactItem = ({
   buttonText,
   onClick
 }: DefaultContactItemProps) => {
+  const [isClicked, setIsClicked] = useState(false);
   return (
     <div className="animate-hidden flex gap-[30px] sm:gap-[40px]">
       <div className="flex [&>svg]:h-[40px] [&>svg]:w-[40px] [&>svg]:text-color2/60">{icon}</div>
@@ -28,7 +30,17 @@ export const DefaultContactItem = ({
           {title}
         </Typography>
         {text && <Typography className="text-color2 text-m sm:text-l">{text}</Typography>}
-        {onClick && <Button onClick={onClick}>{buttonText}</Button>}
+        {onClick && (
+          <Button
+            onClick={() => {
+              onClick();
+              setIsClicked(!isClicked);
+            }}
+          >
+            {" "}
+            {isClicked ? `🎉 Copied 🎉` : buttonText}{" "}
+          </Button>
+        )}
         {href && (
           <CustomLink
             href={href}

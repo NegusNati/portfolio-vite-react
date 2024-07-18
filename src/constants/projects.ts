@@ -76,9 +76,9 @@ const typeGraphqlTech: ProjectTech = { tech: "TypeGraphQL", icon: DockerIcon };
 
 export const projects: Project[] = [
   {
-    title: "Twitter Clone",
+    title: "PassportET",
     description:
-      "As in the title, it is the Twitter clone 😄\n Responsive website with basic features.",
+      "A simple way to look if your passport is ready \n to collect and which day of the week you should collect. ✈️",
     image: TwitterCloneUrl,
     url: "https://twitter-clone-nextjs-coral.vercel.app",
     githubUrl: "https://github.com/adrianpiatek99/twitter-clone-nextjs",
