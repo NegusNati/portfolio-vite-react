@@ -17,6 +17,7 @@ module.exports = {
       color2: "#999999",
       gray: "#cccccc",
       primary: "#4615b2",
+      negus: "#00D8FF",
       border1: "#333333"
     },
     fontSize: {
