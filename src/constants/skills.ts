@@ -1,3 +1,21 @@
+import laravelIcon from "assets/icons/laravel.svg";
+import dockerIcon from "assets/icons/docker.svg";
+import linuxIcon from "assets/icons/linux.svg";
+import javaIcon from "assets/icons/java.svg";
+import cssIcon from "assets/icons/css.svg";
+import htmlIcon from "assets/icons/html.svg";
+import jsIcon from "assets/icons/js.svg";
+import phpIcon from "assets/icons/php.svg";
+import hetznerIcon from "assets/icons/hetzner.svg";
+import gitIcon from "assets/icons/git.svg";
+import pythonIcon from "assets/icons/python.svg";
+import nodeIcon from "assets/icons/node.svg";
+import expressIcon from "assets/icons/express.svg";
+import mongodbIcon from "assets/icons/mongodb.svg";
+import sqliteIcon from "assets/icons/sqlite.svg";
+import mysqlIcon from "assets/icons/mysql.svg";
+import postgressqlIcon from "assets/icons/postgressql.svg";
+
 import cypressIcon from "assets/icons/cypress.svg";
 import eslintIcon from "assets/icons/eslint.svg";
 import gatsbyIcon from "assets/icons/gatsby.svg";
@@ -33,13 +51,14 @@ type Skill = {
 
 export const skills: {
   experiencedWith: Skill[];
+  currentlyLearning: Skill[];
   wantToLearn: Skill[];
 } = {
   experiencedWith: [
     {
-      src: nextjsIcon,
-      website: "https://nextjs.org",
-      text: "Next.js"
+      src: laravelIcon,
+      website: "https://laravel.com",
+      text: "Laravel"
     },
     {
       src: reactIcon,
@@ -47,40 +66,22 @@ export const skills: {
       text: "React.js"
     },
     {
-      src: svelteIcon,
-      website: "https://svelte.dev",
-      text: "Svelte"
+      src: tailwindcssIcon,
+      website: "https://tailwindcss.com",
+      text: "Tailwind CSS"
     },
     {
-      src: typescriptIcon,
-      website: "https://www.typescriptlang.org",
-      text: "TypeScript"
-    },
-    {
-      src: prismaIcon,
-      website: "https://www.prisma.io",
-      text: "Prisma"
-    },
-    {
-      src: trpcIcon,
-      website: "https://trpc.io",
-      text: "tRPC"
-    },
-    {
-      src: graphqlIcon,
-      website: "https://graphql.org",
-      text: "GraphQL"
+      src: reactIcon,
+      website: "https://reactnative.dev",
+      text: "React Native"
     },
     {
       src: reduxIcon,
       website: "https://redux-toolkit.js.org",
       text: "Redux Toolkit"
     },
-    {
-      src: storybookIcon,
-      website: "https://storybook.js.org",
-      text: "Storybook"
-    },
+    
+
     {
       src: reactQueryIcon,
       website: "https://tanstack.com/query/latest",
@@ -90,21 +91,6 @@ export const skills: {
       src: reactHookFormIcon,
       website: "https://react-hook-form.com",
       text: "React Hook Form"
-    },
-    {
-      src: tailwindcssIcon,
-      website: "https://tailwindcss.com",
-      text: "Tailwind CSS"
-    },
-    {
-      src: styledComponentsIcon,
-      website: "https://styled-components.com",
-      text: "Styled Components"
-    },
-    {
-      src: materialUiIcon,
-      website: "https://mui.com/core/",
-      text: "Material UI"
     },
     {
       src: eslintIcon,
@@ -122,56 +108,124 @@ export const skills: {
       text: "Vite"
     },
     {
-      src: jestIcon,
-      website: "https://jestjs.io",
-      text: "Jest"
-    },
-    {
-      src: reactTestingLibraryIcon,
-      website: "https://testing-library.com/docs/react-testing-library/intro/",
-      text: "RTL"
-    },
-    {
-      src: mswIcon,
-      website: "https://mswjs.io",
-      text: "msw"
-    },
-    {
-      src: zodIcon,
-      website: "https://zod.dev",
-      text: "Zod ❤️"
-    },
-    {
-      src: yupIcon,
-      website: "https://github.com/jquense/yup",
-      text: "Yup"
-    },
-    {
-      src: zustandIcon,
-      website: "https://zustand-demo.pmnd.rs",
-      text: "Zustand ❤️"
-    },
-    {
-      src: gatsbyIcon,
-      website: "https://www.gatsbyjs.com",
-      text: "Gatsby"
-    }
-  ],
-  wantToLearn: [
-    {
       src: reactIcon,
       website: "https://reactnative.dev",
       text: "React Native"
     },
     {
-      src: cypressIcon,
-      website: "https://www.cypress.io",
-      text: "Cypress"
+      src: linuxIcon,
+      website: "https://linux.org",
+      text: "Linux"
     },
     {
-      src: playwrightIcon,
-      website: "https://playwright.dev",
-      text: "Playwright"
+      src: javaIcon,
+      website: "https://java.com",
+      text: "Linux"
+    },
+    {
+      src: cssIcon,
+      website: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      text: "CSS 3"
+    },
+    {
+      src: htmlIcon,
+      website: "https://developer.mozilla.org/en-US/docs/Web/html",
+      text: "HTML 5"
+    },
+    {
+      src: htmlIcon,
+      website: "https://developer.mozilla.org/en-US/docs/Web/html",
+      text: "HTML 5"
+    },
+    {
+      src: jsIcon,
+      website: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      text: "JavaScript"
+    },
+    {
+      src: phpIcon,
+      website: "https://php.net",
+      text: "PHP"
+    },
+    {
+      src: hetznerIcon,
+      website: "https://hetzner.com",
+      text: "Hetzner Deployment | vps"
+    },
+    {
+      src: gitIcon,
+      website: "https://git.org",
+      text: "git Version control"
+    },
+    {
+      src: pythonIcon,
+      website: "https://python.org",
+      text: "Python"
+    },
+    {
+      src: nodeIcon,
+      website: "https://nodejs.org",
+      text: "Node.js"
+    },
+    {
+      src: expressIcon,
+      website: "https://expressjs.com/",
+      text: "Express.js"
+    },
+    {
+      src: mongodbIcon,
+      website: "https://www.mongodb.com/",
+      text: "MongoDB"
+    },
+    {
+      src: sqliteIcon,
+      website: "https://www.sqlite.org/",
+      text: "SQLite"
+    },
+    {
+      src: mysqlIcon,
+      website: "https://www.mysql.com/",
+      text: "MySQL"
+    },
+    {
+      src: postgressqlIcon,
+      website: "https://www.postgresql.org/",
+      text: "PostgreSQL DB"
+    }
+  ],
+  currentlyLearning: [
+    {
+      src: typescriptIcon,
+      website: "https://www.typescriptlang.org",
+      text: "TypeScript"
+    },
+    {
+      src: dockerIcon,
+      website: "https://docker.org",
+      text: "Docker"
+    }
+  ],
+
+  wantToLearn: [
+    {
+      src: svelteIcon,
+      website: "https://svelte.dev",
+      text: "Svelte"
+    },
+    {
+      src: prismaIcon,
+      website: "https://www.prisma.io",
+      text: "Prisma"
+    },
+    {
+      src: trpcIcon,
+      website: "https://trpc.io",
+      text: "tRPC"
+    },
+    {
+      src: zustandIcon,
+      website: "https://zustand-demo.pmnd.rs",
+      text: "Zustand ❤️"
     }
   ]
 };

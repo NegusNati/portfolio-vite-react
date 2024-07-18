@@ -28,6 +28,25 @@ export const DefaultSkillsSection = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[30px]">
+          <h3 className="animate-hidden text-xl font-semibold">Currently learning</h3>
+          <div className="grid grid-cols-2 w-full gap-[30px] sm:grid-cols-3 lg:grid-cols-4">
+            {skills.currentlyLearning.map(({ src, website, text }) => (
+              <Link
+                key={website}
+                className="animate-hidden group flex items-center gap-[8px]"
+                to={website}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="block w-[22px] h=[22px] object-cover" src={src} alt={text} />
+                <span className="text-color2 group-hover:text-color1 group-focus-visible:text-color1 duration-200">
+                  {text}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div className="flex flex-col gap-[30px]">
           <h3 className="animate-hidden text-xl font-semibold">Want to learn</h3>
           <div className="grid grid-cols-2 w-full gap-[30px] sm:grid-cols-3 lg:grid-cols-4">
             {skills.wantToLearn.map(({ src, website, text }) => (
