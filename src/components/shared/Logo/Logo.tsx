@@ -9,7 +9,7 @@ export const Logo = () => {
 
   return (
     <button
-      className="text-color1 font-bold text-2xl sm:text-3xl duration-200 sm:hover:text-primary focus-visible:text-primary"
+      className="text-color1 font-bold text-2xl sm:text-3xl duration-200 sm:hover:text-negus focus-visible:text-primary"
       onClick={scrollToTop}
     >
       <a href="/" className="flex items-center">
