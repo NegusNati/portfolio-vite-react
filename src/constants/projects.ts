@@ -15,9 +15,10 @@ import StorybookIcon from "icons/StorybookIcon";
 import StyledComponentsIcon from "icons/StyledComponentsIcon";
 import TailwindIcon from "icons/TailwindIcon";
 import TestIcon from "icons/TestIcon";
-import GraphqlIcon from "icons/TrpcIcon";
-import trpcIcon from "icons/TrpcIcon";
+import DockerIcon from "icons/DockerIcon";
+import trpcIcon from "icons/DockerIcon";
 import TypescriptIcon from "icons/TypescriptIcon";
+
 
 const techTypes = [
   "Next.js",
@@ -36,7 +37,7 @@ const techTypes = [
   "Tailwind CSS",
   "tRPC",
   "Svelte",
-  "GraphQL",
+  "Docker",
   "TypeGraphQL"
 ] as const;
 
@@ -68,8 +69,8 @@ const awsTech: ProjectTech = { tech: "AWS", icon: AwsIcon };
 const craftjsTech: ProjectTech = { tech: "@craftjs/core", icon: BuildIcon };
 const tailwindCssTech: ProjectTech = { tech: "Tailwind CSS", icon: TailwindIcon };
 const trpcTech: ProjectTech = { tech: "tRPC", icon: trpcIcon };
-const graphqlTech: ProjectTech = { tech: "GraphQL", icon: GraphqlIcon };
-const typeGraphqlTech: ProjectTech = { tech: "TypeGraphQL", icon: GraphqlIcon };
+const graphqlTech: ProjectTech = { tech: "Docker", icon: DockerIcon };
+const typeGraphqlTech: ProjectTech = { tech: "TypeGraphQL", icon: DockerIcon };
 // const viteReactTech: ProjectTech = { tech: "Vite", icon: ViteIcon };
 // const svelteTech: ProjectTech = { tech: "Svelte", icon: SvelteIcon };
 
