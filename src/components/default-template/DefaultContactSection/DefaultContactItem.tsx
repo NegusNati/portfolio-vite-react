@@ -24,7 +24,9 @@ export const DefaultContactItem = ({
   const [isClicked, setIsClicked] = useState(false);
   return (
     <div className="animate-hidden flex gap-[30px] sm:gap-[40px]">
-      <div className="flex [&>svg]:h-[40px] [&>svg]:w-[40px] [&>svg]:text-color2/60">{icon}</div>
+      <div className="flex [&>svg]:h-[40px] [&>svg]:w-[40px] [&>svg]:text-color2/60 hover:text-negus  transition duration-100 ease-in-out hover:animate-ping">
+        {icon}
+      </div>
       <div className="flex flex-col gap-[20px]">
         <Typography weight="medium" className="text-xl sm:text-2xl">
           {title}
@@ -48,7 +50,7 @@ export const DefaultContactItem = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit page
+            Connect
           </CustomLink>
         )}
       </div>
