@@ -4,6 +4,9 @@ import OldPortfolioUrl from "assets/projects/old-portfolio.png?url";
 import SpotifyNext13Url from "assets/projects/spotify_next13.png?url";
 import TheLabzUrl from "assets/projects/the-labz.jpg?url";
 import TwitterCloneUrl from "assets/projects/twitter-clone.png?url";
+import PassportWelcomerUrl from "assets/projects/passport.png?url";
+import PassportDashboardUrl from "assets/projects/pass_dashboardpng.png?url";
+import PassportTableUrl from "assets/projects/pass_table.png?url";
 import AirtableIcon from "icons/AirtableIcon";
 import AwsIcon from "icons/AwsIcon";
 import BuildIcon from "icons/BuildIcon";
@@ -18,6 +21,21 @@ import TestIcon from "icons/TestIcon";
 import DockerIcon from "icons/DockerIcon";
 import trpcIcon from "icons/DockerIcon";
 import TypescriptIcon from "icons/TypescriptIcon";
+
+import LaravelHorizonIcon from "icons/Laravelhorizon";
+import LaravelIcon from "icons/Laravel"
+import ExpoIcon from "icons/expo"
+import ExpressIcon from './../icons/Express';
+import MongoDBIcon from "icons/MongoDB";
+import NodeIcon from "icons/Node";
+import PostgresqlIcon from "icons/Postgressql";
+import PostmanIcon from "icons/Postman";
+import SQLiteIcon from "icons/SQLite";
+import LinuxIcon from "icons/Linux";
+import JavaIcon from "icons/Java";
+import JavaScriptIcon from "icons/JavaScript";
+
+
 
 
 const techTypes = [
@@ -38,6 +56,18 @@ const techTypes = [
   "tRPC",
   "Svelte",
   "Docker",
+  "Laravel",
+  "Laravel Horizon",
+"Expo",
+"Express",
+"MongoDB",
+"Node.js",
+"PostgreSQL",
+"Postman",
+"SQLite",
+"Linux",
+"Java",
+"JavaScript",
   "TypeGraphQL"
 ] as const;
 
@@ -55,19 +85,37 @@ export type Project = {
   isPinned?: boolean;
 };
 
+const reactTech: ProjectTech = { tech: "React", icon: ReactIcon };
+const tanStackQueryTech: ProjectTech = { tech: "TanStack Query", icon: ReactIcon };
+const tailwindCssTech: ProjectTech = { tech: "Tailwind CSS", icon: TailwindIcon };
+const dockerTech: ProjectTech = { tech: "Docker", icon: DockerIcon };
+const laravelTech: ProjectTech = { tech: "Laravel", icon: LaravelIcon };
+const laravelHorizonTech: ProjectTech = { tech: "Laravel Horizon", icon: LaravelHorizonIcon };
+const expoTech: ProjectTech = { tech: "Expo", icon: ExpoIcon };
+const expressTech: ProjectTech = { tech: "Express", icon: ExpressIcon };
+const mongoDBTech: ProjectTech = { tech: "MongoDB", icon: MongoDBIcon };
+const nodeTech: ProjectTech = { tech: "Node.js", icon: NodeIcon };
+const postgressqlTech: ProjectTech = { tech: "PostgreSQL", icon: PostgresqlIcon };
+const sqliteTech: ProjectTech = { tech: "SQLite", icon: SQLiteIcon };
+const linuxTech: ProjectTech = { tech: "Linux", icon: LinuxIcon };
+const  javaTech: ProjectTech = { tech: "Java", icon: JavaIcon };
+const javascriptTech: ProjectTech = { tech: "JavaScript", icon: JavaScriptIcon };
+
+
+
+
 const nextjsTech: ProjectTech = { tech: "Next.js", icon: NextjsIcon };
 const typeScriptTech: ProjectTech = { tech: "TypeScript", icon: TypescriptIcon };
 const prismaTech: ProjectTech = { tech: "Prisma", icon: PrismaIcon };
 const styledComponentsTech: ProjectTech = { tech: "Styled Components", icon: StyledComponentsIcon };
-const reactTech: ProjectTech = { tech: "React", icon: ReactIcon };
+// const reactTech: ProjectTech = { tech: "React", icon: ReactIcon };
 const reduxTech: ProjectTech = { tech: "Redux", icon: ReduxIcon };
 const testTech: ProjectTech = { tech: "Jest + RTL", icon: TestIcon };
-const tanStackQueryTech: ProjectTech = { tech: "TanStack Query", icon: ReactIcon };
+// const tanStackQueryTech: ProjectTech = { tech: "TanStack Query", icon: ReactIcon };
 const storybookTech: ProjectTech = { tech: "Storybook", icon: StorybookIcon };
 const airtableTech: ProjectTech = { tech: "Airtable", icon: AirtableIcon };
 const awsTech: ProjectTech = { tech: "AWS", icon: AwsIcon };
 const craftjsTech: ProjectTech = { tech: "@craftjs/core", icon: BuildIcon };
-const tailwindCssTech: ProjectTech = { tech: "Tailwind CSS", icon: TailwindIcon };
 const trpcTech: ProjectTech = { tech: "tRPC", icon: trpcIcon };
 const graphqlTech: ProjectTech = { tech: "Docker", icon: DockerIcon };
 const typeGraphqlTech: ProjectTech = { tech: "TypeGraphQL", icon: DockerIcon };
@@ -79,17 +127,20 @@ export const projects: Project[] = [
     title: "PassportET",
     description:
       "A simple way to look if your passport is ready \n to collect and which day of the week you should collect. ✈️",
-    image: TwitterCloneUrl,
-    url: "https://twitter-clone-nextjs-coral.vercel.app",
-    githubUrl: "https://github.com/adrianpiatek99/twitter-clone-nextjs",
+    image: PassportDashboardUrl,
+    url: "https://github.com/NegusNati/passport-site",
+    githubUrl: "https://github.com/NegusNati/passport-site",
     techs: [
-      nextjsTech,
-      typeScriptTech,
-      trpcTech,
-      prismaTech,
-      testTech,
-      styledComponentsTech,
-      tanStackQueryTech
+      laravelTech,
+      laravelHorizonTech,
+      sqliteTech,
+      dockerTech,
+      reactTech,
+      tailwindCssTech,
+      nodeTech,
+      tanStackQueryTech,
+      linuxTech,
+
     ],
     isPinned: true
   },
