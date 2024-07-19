@@ -43,6 +43,7 @@ import JavaScriptIcon from "icons/JavaScript";
 import FlutterIcon from "icons/Flutter";
 import DartIcon from "icons/Dart";
 import MapIcon from "icons/Maps";
+import TomcatIcon from "icons/Tomcat";
 
 const techTypes = [
   "Next.js",
@@ -76,6 +77,7 @@ const techTypes = [
   "Flutter",
   "Dart",
   "Google Maps",
+  "Appache Tomcat",
   "JavaScript",
   "TypeGraphQL"
 ] as const;
@@ -112,6 +114,7 @@ const javascriptTech: ProjectTech = { tech: "JavaScript", icon: JavaScriptIcon }
 const flutterTech: ProjectTech = { tech: "Flutter", icon: FlutterIcon };
 const dartTech: ProjectTech = { tech: "Dart", icon: DartIcon };
 const mapTech: ProjectTech = { tech: "Google Maps", icon: MapIcon };
+const tomcatTech: ProjectTech = { tech: "Appache Tomcat", icon: TomcatIcon };
 
 const nextjsTech: ProjectTech = { tech: "Next.js", icon: NextjsIcon };
 const typeScriptTech: ProjectTech = { tech: "TypeScript", icon: TypescriptIcon };
@@ -217,16 +220,16 @@ export const projects: Project[] = [
       linuxTech,
       javascriptTech,
       mapTech
-    ],
+    ]
   },
 
   {
     title: "Load Balancer",
     description:
-      "Design and Implementation of a Distributed Load Balancing System \n  that can be used to route trafic with Java Load Balancer",
+      "Design and Implementation of a Distributed Load Balancing System \n  that can be used to route trafic with Java Load Balancer \n This a simple program to demonstarte Load balancing in java using Round Robin and Random algorithms with the help of multiple built in methods and user defined methods. \n It is Designed and implemented for our Tomcat and Glassfish servers",
     image: LoadBalancerUrl,
     url: "https://github.com/NegusNati/distributed_Load_Balancing",
     githubUrl: "https://github.com/NegusNati/distributed_Load_Balancing",
-    techs: [javaTech, awsTech]
+    techs: [javaTech, tomcatTech, awsTech]
   }
 ];
