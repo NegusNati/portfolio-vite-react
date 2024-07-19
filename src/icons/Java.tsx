@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
-import { GrJava } from "react-icons/gr";
+import { SiJava } from "react-icons/si";
 
-const JavaIcon = (props: SVGProps<SVGSVGElement>) => <GrJava {...props} />;
+const JavaIcon = (props: SVGProps<SVGSVGElement>) => <SiJava {...props} />;
 
 export default JavaIcon;
