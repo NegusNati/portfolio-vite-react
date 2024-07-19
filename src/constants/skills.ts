@@ -76,11 +76,40 @@ export const skills: {
       text: "React Native"
     },
     {
+      src: nodeIcon,
+      website: "https://nodejs.org",
+      text: "Node.js"
+    },
+    {
+      src: expressIcon,
+      website: "https://expressjs.com/",
+      text: "Express.js"
+    },
+    {
+      src: mongodbIcon,
+      website: "https://www.mongodb.com/",
+      text: "MongoDB"
+    },
+    {
+      src: sqliteIcon,
+      website: "https://www.sqlite.org/",
+      text: "SQLite"
+    },
+    {
+      src: mysqlIcon,
+      website: "https://www.mysql.com/",
+      text: "MySQL"
+    },
+    {
+      src: postgressqlIcon,
+      website: "https://www.postgresql.org/",
+      text: "PostgreSQL DB"
+    },
+    {
       src: reduxIcon,
       website: "https://redux-toolkit.js.org",
       text: "Redux Toolkit"
     },
-    
 
     {
       src: reactQueryIcon,
@@ -161,36 +190,6 @@ export const skills: {
       src: pythonIcon,
       website: "https://python.org",
       text: "Python"
-    },
-    {
-      src: nodeIcon,
-      website: "https://nodejs.org",
-      text: "Node.js"
-    },
-    {
-      src: expressIcon,
-      website: "https://expressjs.com/",
-      text: "Express.js"
-    },
-    {
-      src: mongodbIcon,
-      website: "https://www.mongodb.com/",
-      text: "MongoDB"
-    },
-    {
-      src: sqliteIcon,
-      website: "https://www.sqlite.org/",
-      text: "SQLite"
-    },
-    {
-      src: mysqlIcon,
-      website: "https://www.mysql.com/",
-      text: "MySQL"
-    },
-    {
-      src: postgressqlIcon,
-      website: "https://www.postgresql.org/",
-      text: "PostgreSQL DB"
     }
   ],
   currentlyLearning: [
