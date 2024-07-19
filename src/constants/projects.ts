@@ -218,7 +218,6 @@ export const projects: Project[] = [
       javascriptTech,
       mapTech
     ],
-    isPinned: true
   },
 
   {

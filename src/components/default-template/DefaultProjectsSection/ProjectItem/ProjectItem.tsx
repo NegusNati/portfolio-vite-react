@@ -50,9 +50,9 @@ export const ProjectItem = ({
         <Typography className="text-xl">{title}</Typography>
         <Typography className="text-color2">{description}</Typography>
         <div className="grid grid-cols-[1fr_auto] items-start gap-[12px] [&>a]:mt-[-5px]">
-          <ul className="inline-flex flex-wrap align-center gap-[12px]">
+          <ul className="inline-flex flex-wrap align-center gap-[12px] ">
             {techs.map((projectTech) => (
-              <ProjectItemTech key={projectTech.tech} {...projectTech} />
+              <ProjectItemTech key={projectTech.tech} {...projectTech}  />
             ))}
           </ul>
           {githubUrl && (
