@@ -19,7 +19,7 @@ export const DefaultAboutMeSection = () => {
         </Typography>
         <Typography tag="p" className="text-color2 text-l sm:text-xl whitespace-pre-line">
           {
-            "Hello and welcome to my portfolio! \n Passionate about Software Engineering, I'm a dedicated and enthusiastic individual with a strong foundation in computer science.\n \n I'm always eager to learn new technologies and techniques to enhance my skills and contribute to innovative projects. I have built two enterprise systems to help a compnay with lead managment and conversion. \n \n I am currently building passport.et, a solution to a a problem I encountered while trying check if my mother's passport was ready.  \n \n Let's connect and explore woking together!"
+            "Hello and welcome to my portfolio! \n Passionate about Software Engineering, I'm a dedicated and enthusiastic individual with a strong foundation in computer science.\n \n I'm always eager to learn new technologies and techniques to enhance my skills and contribute to innovative projects. I have built two enterprise systems to help a compnay with lead managment and conversion. \n \n I am currently working as a Seinor Full Stack Developer at Victor doors (L and H Building Materials PLC) building in house ERP systems, but also building passport.et at my free time, a solution to a a problem I encountered while trying check if my mother's passport was ready.  \n \n Let's connect and explore woking together!"
           }
         </Typography>
         <div className="flex gap-[12px]">
