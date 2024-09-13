@@ -8,7 +8,7 @@ import DocsIcon from "icons/Docs";
 import { Section } from "shared/Section";
 
 const resumeURL =
-  "https://docs.google.com/document/d/e/2PACX-1vTytitEB_rchrBxX1IOvbF01rMoE9lDZwgqau3gtEG23NrnkbSzI4J_PAsX4-oFwG4wdJmLjxx57oXU/pub";
+  "https://docs.google.com/document/d/1i3NHES51xMxPq2_gydKxreV7U4dPjqDnRlquXT2S6m8/pub";
 
 export const DefaultAboutMeSection = () => {
   return (

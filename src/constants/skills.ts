@@ -11,6 +11,7 @@ import gitIcon from "assets/icons/git.svg";
 import pythonIcon from "assets/icons/python.svg";
 import nodeIcon from "assets/icons/node.svg";
 import expressIcon from "assets/icons/express.svg";
+import nginxIcon from "assets/icons/NginxIcon.svg";
 import mongodbIcon from "assets/icons/mongodb.svg";
 import sqliteIcon from "assets/icons/sqlite.svg";
 import mysqlIcon from "assets/icons/mysql.svg";
@@ -42,6 +43,7 @@ import viteIcon from "assets/icons/vite.svg";
 import yupIcon from "assets/icons/yup.svg";
 import zodIcon from "assets/icons/zod.svg";
 import zustandIcon from "assets/icons/zustand.svg";
+
 
 type Skill = {
   src: string;
@@ -149,17 +151,12 @@ export const skills: {
     {
       src: javaIcon,
       website: "https://java.com",
-      text: "Linux"
+      text: "Java"
     },
     {
       src: cssIcon,
       website: "https://developer.mozilla.org/en-US/docs/Web/CSS",
       text: "CSS 3"
-    },
-    {
-      src: htmlIcon,
-      website: "https://developer.mozilla.org/en-US/docs/Web/html",
-      text: "HTML 5"
     },
     {
       src: htmlIcon,
@@ -202,6 +199,11 @@ export const skills: {
       src: dockerIcon,
       website: "https://docker.org",
       text: "Docker"
+    },
+    {
+      src: dockerIcon,
+      website: "https://docker.org",
+      text: "Docker Compose"
     }
   ],
 

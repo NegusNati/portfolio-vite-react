@@ -70,6 +70,7 @@ const techTypes = [
   "MongoDB",
   "Node.js",
   "PostgreSQL",
+  "Nginx",
   "Postman",
   "SQLite",
   "Linux",
